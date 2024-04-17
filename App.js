@@ -1,20 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+/*
+ * Author:      Martin Rizada
+ * filename:    App.js
+ * brief:       handles the naivgation
+ * 
+ * */
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from './screens/HomeScreen';
+import AddPasswordScreen from './screens/AddPasswordScreen';
+import PasswordListScreen from './screens/PasswordListScreen';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+const Stack = createNativeStackNavigator();
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const App = () => {
+    return (
+        <NavigationContainer>
+            <Stack.Navigator>
+                <Stack.Screen name="Home" component={HomeScreen} />
+                <Stack.Screen name="Add Account" component={AddPasswordScreen} />
+                <Stack.Screen name="Password List" component={PasswordListScreen} />
+            </Stack.Navigator>
+        </NavigationContainer>
+    );
+};
+
+export default App;
