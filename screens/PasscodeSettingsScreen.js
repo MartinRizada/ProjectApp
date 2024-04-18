@@ -26,18 +26,21 @@ const PasscodeSettingsScreen = ({ navigation }) => {
         if (value) {
             navigation.navigate('Passcode', { mode: 'set' }); 
         } else {
+           
             Alert.alert("Disable Passcode", "Are you sure you want to disable the passcode?",
                 [
                     { text: "Cancel", onPress: () => setIsPasscodeEnabled(true), style: "cancel" },
-                    { text: "Disable", onPress: disablePasscode }
+                    {
+                        text: "Disable", onPress: async () => {
+                            await AsyncStorage.setItem('passcodeEnabled', 'false');
+                            await AsyncStorage.removeItem('passcode'); 
+                            Alert.alert("Passcode Disabled", "The passcode has been disabled successfully.");
+                        }
+                    }
                 ]);
         }
     };
-    //disable the passcode
-    const disablePasscode = async () => {
-        await AsyncStorage.removeItem('passcode'); 
-        Alert.alert("Passcode Disabled", "The passcode has been disabled successfully.");
-    };
+   
 
     return (
         <View style={styles.container}>
