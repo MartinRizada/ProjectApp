@@ -17,14 +17,14 @@ const App = () => {
 
     useEffect(() => {
         const initializeAsync = async () => {
-            // Additional async setup if needed
+     
             await SplashScreen.preventAutoHideAsync();  // Ensure splash screen stays until ready
 
             const hasPasscode = await AsyncStorage.getItem('passcode');
             if (!hasPasscode) {
                 // Handle no passcode setup
             } else {
-                // Handle passcode exists
+             
             }
 
             setTimeout(() => {

@@ -2,7 +2,7 @@
   "expo": {
     "name": "UserShield",
     "slug": "ProjectApp",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/appIcon.png",
     "userInterfaceStyle": "light",
@@ -17,7 +17,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.martinrizada.usershield",
-      "buildNumber": "1.0.0"
+      "buildNumber": "1.0.1"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,7 +25,7 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.martinrizada.usershield",
-      "versionCode": 10000
+      "versionCode": 10001
     },
     "web": {
       "favicon": "./assets/favicon.png"

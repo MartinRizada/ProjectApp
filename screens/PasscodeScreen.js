@@ -20,7 +20,7 @@ const PasscodeScreen = ({ navigation, route }) => {
 
     useFocusEffect(
         React.useCallback(() => {
-            // Clear the passcode input whenever the screen is focused
+          
             setPasscode('');
 
             

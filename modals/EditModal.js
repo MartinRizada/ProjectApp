@@ -6,6 +6,7 @@
  * */
 import React, { useState, useEffect } from 'react';
 import { Modal, View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import PasswordStrengthMeterBar from 'react-native-password-strength-meter-bar';
 
 const EditModal = ({ isVisible, onClose, item, onSave }) => {
     const [description, setDescription] = useState(item.description);
@@ -73,6 +74,9 @@ const EditModal = ({ isVisible, onClose, item, onSave }) => {
                         placeholderTextColor="#999"
                         maxLength={30}
                     />
+                    <View style={styles.componentMargin}>
+                        <PasswordStrengthMeterBar password={password} />
+                    </View>
                     <View style={styles.modalButtons}>
                         <TouchableOpacity style={styles.button} onPress={handleSave}>
                             <Text style={styles.buttonText}>Save</Text>
