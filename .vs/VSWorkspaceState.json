@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\assets",
+    "\\modals",
     "\\screens"
   ],
-  "SelectedNode": "\\screens\\PasswordListScreen.js",
   "PreviewInSolutionExplorer": false
 }
