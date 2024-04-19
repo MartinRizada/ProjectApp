@@ -50,9 +50,9 @@ These libraries can be installed using npm or Yarn as part of the installation p
 
 After launching User Shield, set up a passcode for secure access. You can then begin adding account details. Copy credentials to your clipboard as needed for use across different apps and websites.
 
-## Contributing
+## Future Plan for Additional Features:
 
-Future Plan for Additional Features:
+
 - Password Stength Meter.
 - Password Generator.
 - User-friendly interface with theme support for light and dark modes.
