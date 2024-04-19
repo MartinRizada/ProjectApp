@@ -26,7 +26,7 @@ Before starting, ensure you have the following installed:
 
 ### Installing
 
-1. Clone the project to your local machine (omit this step if you have the source code).
+1. Clone the project to your local machine `https://github.com/MartinRizada/ProjectApp.git` (omit this step if you have the source code but there is some error right now opening the file when you clone it).
 2. Navigate to the project directory.
 3. Install the necessary packages: `npm install`
 4. Start the app: `npx expo start --tunnel`
